@@ -34,14 +34,11 @@ body p{
 }
 
 .navbar {
-	background-color: #de4710 !important;
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#de4710+0,ff670f+100 */
-background: rgb(222,71,16); /* Old browsers */
+background-color: #de4710 !important;
 background: -moz-linear-gradient(top,  rgba(222,71,16,1) 0%, rgba(255,103,15,1) 100%); /* FF3.6-15 */
 background: -webkit-linear-gradient(top,  rgba(222,71,16,1) 0%,rgba(255,103,15,1) 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(to bottom,  rgba(222,71,16,1) 0%,rgba(255,103,15,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de4710', endColorstr='#ff670f',GradientType=0 ); /* IE6-9 */
-
 
 }
 .navbar .dropdown-menu{
@@ -736,17 +733,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de4710', end
 
 /*NEWS CARD SECTION*/
 
+
 .news-and-events h3{
   color:silver;
   font-size: 35px;
   padding-bottom:5px;
-  font-weight:lighter;
+  font-weight:200;
 }
 .news-and-events .carousel-inner {
 	height: auto;
 }
 .news-and-events .carousel-indicators{
-  color: #de4710;
+  color: #ff670f;
   position:absolute;
   bottom:100px;
   left:400px;
@@ -761,6 +759,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de4710', end
 	border-radius: 8px;
 	box-shadow: none;
   background-color:#011F5B;
+  background-image: url(http://www.transparenttextures.com/patterns/xv.png);
   transform: translate(-50px,35px);/*OVERLAPPING DIVS*/
 }
 
@@ -790,7 +789,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de4710', end
 	line-height: 1;
 	letter-spacing: -.05rem;
 	font-family: 'Prata', serif;
-  color: #de4710;
+  color: #ff670f;
 }
 
 .news-and-events .card-block p {
@@ -1162,9 +1161,7 @@ right: 5%;
 	font-family: 'Prata', serif;
 	position: relative;
 	background-color: #011F5B;
-
-
-
+  background-image: url(http://www.transparenttextures.com/patterns/xv.png);
 }
 
 .footer ul li {
