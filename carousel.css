@@ -20,7 +20,7 @@ body p{
 	font-size: 50px !important;
 	 padding: 20px 0 0 20px;
    text-shadow: 5px 2px 3px rgba(0,0,0,0.40);
-   transition:.05s;
+   transition: transform .5s;
 }
 .navbar-brand h1:hover{
   text-shadow: 6px 5px 3px rgba(0,0,0,0.49);
@@ -54,7 +54,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de4710', end
 }
 
 .navbar .nav-link {
-	font-size: 20px;
+	font-size: 19px;
 	font-family: 'Prata', serif;
 	color: #fff !important;
 }
