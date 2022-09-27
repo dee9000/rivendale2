@@ -30,7 +30,6 @@ body p{
 }
 .navbar-brand h1:active {
   text-shadow: 5px 2px 3px rgba(0,0,0,0.40);
-
 }
 
 .navbar {
@@ -510,31 +509,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de4710', end
 	box-shadow: 16px 16px 12px -3px rgba(0, 0, 0, 0.35);
   transform: rotate(360deg);
 }
-
-
-.welcome .container-fluid-2 .card-block .btn {
-	-webkit-box-shadow: 3px 7px 15px 0px rgba(0, 0, 0, 0.17);
-	box-shadow: 3px 7px 15px 0px rgba(0, 0, 0, 0.17);
-	padding: 0.8em 1.2em;
-	background-color: #de4710;
-	color: #FBFBFD;
-	font-weight: 600;
-	font-size: 18px;
-  transition: 0.30s;
-  -webkit-transition: 0.30s;
-  -moz-transition: 0.30s;
-  -ms-transition: 0.30s;
-  -o-transition: 0.30s;
+.welcome .btn:active {
+  color: #00FF00;
+  box-shadow: 5px 2px 3px rgba(0,0,0,0.40);
 }
 
-.welcome .container-fluid-2 .btn:hover {
-  border-radius:50%;
-	background-color: #fff;
-	color: #de4710;
-	-webkit-box-shadow: 16px 16px 12px -3px rgba(0, 0, 0, 0.35);
-	box-shadow: 16px 16px 12px -3px rgba(0, 0, 0, 0.35);
-  transform: rotate(360deg);
-}
+
 
 .welcome .container-fluid-2 {
 	background-color: #0E0E0E;
@@ -610,7 +590,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de4710', end
 	color: #FBFBFD;
 	font-weight: 600;
 	font-size: 18px;
-	transition: .5s;
+  transition: 0.30s;
+  -webkit-transition: 0.30s;
+  -moz-transition: 0.30s;
+  -ms-transition: 0.30s;
+  -o-transition: 0.30s;
 }
 
 .welcome .container-fluid-2 .btn:hover {
@@ -619,13 +603,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de4710', end
 	-webkit-box-shadow: 16px 16px 12px -3px rgba(0, 0, 0, 0.35);
 	box-shadow: 16px 16px 12px -3px rgba(0, 0, 0, 0.35);
 }
-
-/*glowing go button*/
-.welcome .btn:active {
-	color: #de4710;
-	text-shadow: 0 0 10px #de4710, 2px 2px 2px rgba(222, 71, 16, 0);
-
+.welcome .container-fluid-2 .btn:active {
+  color: #00FF00;
+  box-shadow: 5px 2px 3px rgba(0,0,0,0.40);
 }
+
+
+
 /*media query to readjust feature quote texts just after carousel*/
 @media only screen and (max-width:450px) {
 
@@ -746,6 +730,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de4710', end
   transform: rotate(360deg);
 
 }
+.box-menu .btn:active {
+  color: #00FF00;
+  box-shadow: 5px 2px 3px rgba(0,0,0,0.40);
+}
 
 
 /*NEWS CARD SECTION*/
@@ -774,9 +762,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de4710', end
 	border-radius: 8px;
 	box-shadow: none;
   background-color:#011F5B;
-  background-image: url(http://www.transparenttextures.com/patterns/xv.png);
+  background-image: url("https://www.transparenttextures.com/patterns/skulls.png");
   transform: translate(-50px,35px);/*OVERLAPPING DIVS*/
 }
+
 
 .news-and-events .card {
 	border: none;
@@ -842,6 +831,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de4710', end
 	color: #de4710;
 	-webkit-box-shadow: 16px 16px 12px -3px rgba(0, 0, 0, 0.35);
 	box-shadow: 16px 16px 12px -3px rgba(0, 0, 0, 0.35);
+}
+.news-and-events .btn:active {
+  color: #00FF00;
+  box-shadow: 5px 2px 3px rgba(0,0,0,0.40);
 }
 
 .news-and-events .box-menu-row {
@@ -1181,7 +1174,7 @@ right: 5%;
 	font-family: 'Prata', serif;
 	position: relative;
 	background-color: #011F5B;
-  background-image: url(http://www.transparenttextures.com/patterns/xv.png);
+  background-image: url("https://www.transparenttextures.com/patterns/skulls.png");
 }
 
 .footer ul li {
@@ -1248,4 +1241,8 @@ right: 5%;
 	-webkit-box-shadow: 16px 16px 12px -3px rgba(0, 0, 0, 0.35);
 	box-shadow: 16px 16px 12px -3px rgba(0, 0, 0, 0.35);
   transform: rotate(360deg);
+}
+.footer .btn:active {
+  color: #00FF00;
+  box-shadow: 5px 2px 3px rgba(0,0,0,0.40);
 }
