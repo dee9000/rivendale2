@@ -43,6 +43,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de4710', end
 .navbar .dropdown-menu{
   background-color:#F7F5E9;
   background-image: url("img/news-background2.png");
+	/*background-image: url("https://www.transparenttextures.com/patterns/skulls.png");*/
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
@@ -502,12 +503,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de4710', end
 }
 
 .welcome .btn:hover {
-  border-radius:50%;
-	background-color: #fff;
+	border-radius:50%;
+	border:2px solid #de4710;
 	color: #de4710;
-	-webkit-box-shadow: 16px 16px 12px -3px rgba(0, 0, 0, 0.35);
-	box-shadow: 16px 16px 12px -3px rgba(0, 0, 0, 0.35);
-  transform: rotate(360deg);
+	background-color: #fff;
+	-webkit-box-shadow: 16px 16px 12px -9px rgba(0, 0, 0, 0.35);
+	box-shadow: 16px 16px 12px -9px rgba(0, 0, 0, 0.35);
+	transform: rotate(360deg);
 }
 .welcome .btn:active {
   color: #00FF00;
@@ -581,34 +583,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de4710', end
 	font-weight: 900;
 }
 
-.welcome.container-fluid-2 .btn {
-	border-radius: 50%;
-	-webkit-box-shadow: 3px 7px 15px 0px rgba(0, 0, 0, 0.17);
-	box-shadow: 3px 7px 15px 0px rgba(0, 0, 0, 0.17);
-	padding: 0.8em 1.2em;
-	background-color: #de4710;
-	color: #FBFBFD;
-	font-weight: 600;
-	font-size: 18px;
-  transition: 0.30s;
-  -webkit-transition: 0.30s;
-  -moz-transition: 0.30s;
-  -ms-transition: 0.30s;
-  -o-transition: 0.30s;
-}
-
-.welcome .container-fluid-2 .btn:hover {
-	background-color: #fff;
-	color: #de4710;
-	-webkit-box-shadow: 16px 16px 12px -3px rgba(0, 0, 0, 0.35);
-	box-shadow: 16px 16px 12px -3px rgba(0, 0, 0, 0.35);
-}
-.welcome .container-fluid-2 .btn:active {
-  color: #00FF00;
-  box-shadow: 5px 2px 3px rgba(0,0,0,0.40);
-}
-
-
 
 /*media query to readjust feature quote texts just after carousel*/
 @media only screen and (max-width:450px) {
@@ -627,36 +601,39 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de4710', end
 
 }
 
-.custom-shape-divider-bottom-1662840288 {
-	position: absolute;
-	bottom: -1px;
-	left: 0;
-	width: 100%;
-	overflow: hidden;
-	line-height: 0;
-	transform: rotate(180deg);
+.custom-shape-divider-bottom-1664785122 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
 }
 
-.custom-shape-divider-bottom-1662840288 svg {
-	position: relative;
-	display: block;
-	width: calc(123% + 1.3px);
-	height: 208px;
+.custom-shape-divider-bottom-1664785122 svg {
+    position: relative;
+    display: block;
+    width: calc(254% + 1.3px);
+    height: 229px;
+    transform: rotateY(180deg);
 }
 
-.custom-shape-divider-bottom-1662840288 .shape-fill {
-	fill: #FFFFFF;
+.custom-shape-divider-bottom-1664785122 .shape-fill {
+    fill: #FBF8F4;
 }
-
 
 /*BOX MENUS*/
 .box-menu {
 	position: relative;
+  background-color: #FBF8F4;
+
 }
 
+
 .box-menu .container-fluid-3 {
-	background-color: #fff;
 	position: relative;
+
 
 }
 
@@ -669,16 +646,25 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de4710', end
 
 .box-menu .card {
 	border: none;
+	background-color: #FBF8F4;
 }
 
 .box-menu .card-body {
-	background-color: #F8F9FA;
+	background-image: url("https://www.transparenttextures.com/patterns/skulls.png");
+	background-color: #ffffff;
 	transition: .5s;
+	border-radius: 5px;
+	margin:20px;
+	padding:32px;
+	transform: translate(0px,-50px);/*OVERLAPPING DIVS OVER IMAGE*/
+	-webkit-box-shadow: 3px 7px 15px 0px rgba(0, 0, 0, 0.05);
+	box-shadow: 3px 7px 15px 0px rgba(0, 0, 0, 0.05);
+
 }
 
 .box-menu .card-body:hover {
-	background-color: #F3F4F4;
-	cursor: pointer;
+	-webkit-box-shadow: 3px 7px 15px 0px rgba(0, 0, 0, 0.13);
+	box-shadow: 3px 7px 15px 0px rgba(0, 0, 0, 0.13);
 }
 
 .box-menu .card-title {
@@ -689,22 +675,33 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de4710', end
 }
 
 .box-menu .card-text {
-	color: #637497;
+	color: #A1123D;
 	font-size: 17px;
+	font-weight:900;
+
 }
 
 .box-menu .container-fluid-3 .row {
-	background-color: #FFFFFF;
+  background-color: #FBF8F4;
 	padding: 1em;
 	border-radius: 0px;
+}
+/*code to keep image within div for zooming in within rather than outside div*/
+.box-menu .container-fluid-3 .card {
+	 position: relative;
+	 overflow: hidden;
 }
 
 .box-menu .container-fluid-3 .card img {
 	width: 100%;
 	height: auto;
-	border-radius: 10px 10px 0 0;
-
+	transition: all 0.4s;
 }
+
+.box-menu .container-fluid-3 .card img:hover{
+    transform: scale(1.1);
+  }
+
 
 .box-menu .btn {
 	-webkit-box-shadow: 3px 7px 15px 0px rgba(0, 0, 0, 0.17);
@@ -723,20 +720,25 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de4710', end
 
 .box-menu .btn:hover {
   border-radius:50%;
-	background-color: #fff;
+	border:2px solid #de4710;
 	color: #de4710;
-	-webkit-box-shadow: 16px 16px 12px -3px rgba(0, 0, 0, 0.35);
-	box-shadow: 16px 16px 12px -3px rgba(0, 0, 0, 0.35);
+	background-color: #fff;
+	-webkit-box-shadow: 16px 16px 12px -9px rgba(0, 0, 0, 0.35);
+	box-shadow: 16px 16px 12px -9px rgba(0, 0, 0, 0.35);
   transform: rotate(360deg);
-
 }
 .box-menu .btn:active {
   color: #00FF00;
   box-shadow: 5px 2px 3px rgba(0,0,0,0.40);
+
 }
 
 
 /*NEWS CARD SECTION*/
+.news-and-events{
+	padding: 5rem 0rem 5rem 0rem;
+
+}
 .news-and-events h3{
   color:silver;
   font-size: 35px;
@@ -769,11 +771,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de4710', end
 
 .news-and-events .card {
 	border: none;
-  background-color:#F7F5E9;
-  background-image: url("img/news-background2.png");
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: right;
 }
 
 
@@ -785,6 +782,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de4710', end
 	font-family: 'Prata', serif;
 	color: #011F5B;
 	padding-left: 3rem;
+  padding-top:3rem;
 }
 
 .news-and-events .card-block .featurette-headings-inner {
@@ -825,12 +823,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de4710', end
 }
 
 .news-and-events .btn:hover {
-  border-radius: 50%;
-  transform:rotate(360deg);
-	background-color: #fff;
+	border-radius:50%;
+	border:2px solid #de4710;
 	color: #de4710;
-	-webkit-box-shadow: 16px 16px 12px -3px rgba(0, 0, 0, 0.35);
-	box-shadow: 16px 16px 12px -3px rgba(0, 0, 0, 0.35);
+	background-color: #fff;
+	-webkit-box-shadow: 16px 16px 12px -9px rgba(0, 0, 0, 0.35);
+	box-shadow: 16px 16px 12px -9px rgba(0, 0, 0, 0.35);
+  transform: rotate(360deg);
 }
 .news-and-events .btn:active {
   color: #00FF00;
@@ -891,15 +890,40 @@ right: 5%;
 }
 
 
+/*SVG SHAPE UNDER NEWS CAROUSEL ABOVE CALENDAR*/
+.custom-shape-divider-top-1664786082 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+
+}
+
+.custom-shape-divider-top-1664786082 svg {
+    position: relative;
+    display: block;
+    width: calc(152% + 1.3px);
+    height: 84px;
+}
+
+.custom-shape-divider-top-1664786082 .shape-fill {
+    fill: #ffffff;
+}
+
 
 /*CALENDAR AND SCHEDULE*/
 .calendar {
-	background-color: #F8F9FA;
-	background-image: url("img/background-fade1.png");
-	background-repeat: no-repeat;
-	background-size: auto;
+	background-color: #de4710;
+	/*background-image: url("img/background-fade1.png");*/
+	/*background-image: url("https://www.transparenttextures.com/patterns/skulls.png");*/
+	background-image: url("img/orange-background.jpg");
+	background-repeat:no-repeat;
+	background-size: contain;
 	background-position: right;
-	padding: 3rem;
+	padding: 10rem 5rem 10rem 5rem;
+
 }
 
 .calendar h3 {
@@ -912,7 +936,7 @@ right: 5%;
 }
 
 .calendar .featurette-headings {
-	color: #011F5B;
+	color: #fff;
 	font-family: 'Prata', serif;
 	font-size: 45px;
 }
@@ -940,7 +964,15 @@ right: 5%;
 	background-color: #fff;
 	background-clip: border-box;
 	border: 0px solid transparent;
-	border-radius: 0px;
+	border-radius: 5px;
+	padding:10px 10px 10px 0;
+	-webkit-box-shadow: 3px 7px 15px 0px rgba(0, 0, 0, 0.15);
+	box-shadow: 3px 7px 15px 0px rgba(0, 0, 0, 0.15);
+	transition:0.3s;
+}
+.calendar .card:hover{
+	-webkit-box-shadow: 3px 7px 15px 0px rgba(0, 0, 0, 0.25);
+	box-shadow: 3px 7px 15px 0px rgba(0, 0, 0, 0.25);
 }
 
 .calendar .card-body {
@@ -980,11 +1012,13 @@ right: 5%;
 	text-align: center;
 	color: #ffffff;
 	padding: 3px;
+	font-family: 'Prata', serif;
 }
 
 .calendar .beige {
 	background-color: #F7F5E9;
 	padding: 10px;
+	font-family: 'Prata', serif;
 }
 
 .calendar .fa-arrow-right {
@@ -995,6 +1029,28 @@ right: 5%;
 	color: #637497;
 }
 
+
+/*SHAPE ABOVE SOCIAL FEED*/
+.custom-shape-divider-bottom-1664788676 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1664788676 svg {
+    position: relative;
+    display: block;
+    width: calc(163% + 1.3px);
+    height: 126px;
+}
+
+.custom-shape-divider-bottom-1664788676 .shape-fill {
+    fill: #F8F9FA;
+}
 
 /*TWITTER FEED SECTION*/
 #social-section {
@@ -1235,12 +1291,13 @@ right: 5%;
 }
 
 .footer .btn:hover {
-  border-radius: 50%;
-	background-color: #ffff;
+	border-radius:50%;
+	border:2px solid #de4710;
 	color: #de4710;
-	-webkit-box-shadow: 16px 16px 12px -3px rgba(0, 0, 0, 0.35);
-	box-shadow: 16px 16px 12px -3px rgba(0, 0, 0, 0.35);
-  transform: rotate(360deg);
+	background-color: #fff;
+	-webkit-box-shadow: 16px 16px 12px -9px rgba(0, 0, 0, 0.35);
+	box-shadow: 16px 16px 12px -9px rgba(0, 0, 0, 0.35);
+	transform: rotate(360deg);
 }
 .footer .btn:active {
   color: #00FF00;
