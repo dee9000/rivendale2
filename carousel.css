@@ -504,7 +504,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de4710', end
 
 .welcome .btn:hover {
 	border-radius:50%;
-	border:2px solid #de4710;
+	border:1px solid #de4710;
 	color: #de4710;
 	background-color: #fff;
 	-webkit-box-shadow: 16px 16px 12px -9px rgba(0, 0, 0, 0.35);
@@ -515,7 +515,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de4710', end
   color: #00FF00;
   box-shadow: 5px 2px 3px rgba(0,0,0,0.40);
 }
-
 
 
 .welcome .container-fluid-2 {
@@ -651,7 +650,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de4710', end
 
 .box-menu .card-body {
 	background-image: url("https://www.transparenttextures.com/patterns/skulls.png");
-	background-color: #ffffff;
+	background-color: #011F5B;
 	transition: .5s;
 	border-radius: 5px;
 	margin:20px;
@@ -665,17 +664,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de4710', end
 .box-menu .card-body:hover {
 	-webkit-box-shadow: 3px 7px 15px 0px rgba(0, 0, 0, 0.13);
 	box-shadow: 3px 7px 15px 0px rgba(0, 0, 0, 0.13);
+	transform: translate(0px,-60px);/*OVERLAPPING DIVS OVER IMAGE*/
 }
 
 .box-menu .card-title {
 	/*color:#0E0E0E;*/
-	color: #011F5B;
+	color: #FBF8F4;
 	font-family: 'Prata', serif;
 	font-size: 25px;
 }
 
 .box-menu .card-text {
-	color: #A1123D;
+	color: #FBF8F4;
 	font-size: 17px;
 	font-weight:900;
 
@@ -720,7 +720,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de4710', end
 
 .box-menu .btn:hover {
   border-radius:50%;
-	border:2px solid #de4710;
+	border:1px solid #de4710;
 	color: #de4710;
 	background-color: #fff;
 	-webkit-box-shadow: 16px 16px 12px -9px rgba(0, 0, 0, 0.35);
@@ -824,7 +824,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de4710', end
 
 .news-and-events .btn:hover {
 	border-radius:50%;
-	border:2px solid #de4710;
+	border:1px solid #de4710;
 	color: #de4710;
 	background-color: #fff;
 	-webkit-box-shadow: 16px 16px 12px -9px rgba(0, 0, 0, 0.35);
@@ -913,6 +913,7 @@ right: 5%;
 }
 
 
+
 /*CALENDAR AND SCHEDULE*/
 .calendar {
 	background-color: #de4710;
@@ -925,6 +926,11 @@ right: 5%;
 	padding: 10rem 5rem 10rem 5rem;
 
 }
+/* visited link */
+.calendar a:visited {
+  color: #FBFBFD;
+}
+
 
 .calendar h3 {
 	font-family: 'Prata', serif;
@@ -973,6 +979,8 @@ right: 5%;
 .calendar .card:hover{
 	-webkit-box-shadow: 3px 7px 15px 0px rgba(0, 0, 0, 0.25);
 	box-shadow: 3px 7px 15px 0px rgba(0, 0, 0, 0.25);
+	transform: translate(5px,-5px);/*OVERLAPPING DIVS OVER IMAGE*/
+
 }
 
 .calendar .card-body {
@@ -1007,8 +1015,8 @@ right: 5%;
 	width: 30px;
 }
 
-.calendar .red {
-	background-color: #A1123D;
+.calendar .blue {
+	background-color: #011F5B;
 	text-align: center;
 	color: #ffffff;
 	padding: 3px;
@@ -1292,7 +1300,7 @@ right: 5%;
 
 .footer .btn:hover {
 	border-radius:50%;
-	border:2px solid #de4710;
+	border:1px solid #de4710;
 	color: #de4710;
 	background-color: #fff;
 	-webkit-box-shadow: 16px 16px 12px -9px rgba(0, 0, 0, 0.35);
@@ -1302,4 +1310,13 @@ right: 5%;
 .footer .btn:active {
   color: #00FF00;
   box-shadow: 5px 2px 3px rgba(0,0,0,0.40);
+}
+.footer .img-thumbnail:hover{
+	cursor: pointer;
+	transform: scale(1.05);
+	transition: 0.30s;
+	-webkit-transition: 0.30s;
+	-moz-transition: 0.30s;
+	-ms-transition: 0.30s;
+	-o-transition: 0.30s;
 }
