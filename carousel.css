@@ -656,15 +656,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de4710', end
 	margin:20px;
 	padding:32px;
 	transform: translate(0px,-50px);/*OVERLAPPING DIVS OVER IMAGE*/
-	-webkit-box-shadow: 3px 7px 15px 0px rgba(0, 0, 0, 0.05);
-	box-shadow: 3px 7px 15px 0px rgba(0, 0, 0, 0.05);
+	-webkit-box-shadow: 3px 7px 15px 0px rgba(0, 0, 0, 0.30);
+	box-shadow: 3px 7px 15px 0px rgba(0, 0, 0, 0.30);
 
 }
 
 .box-menu .card-body:hover {
-	-webkit-box-shadow: 3px 7px 15px 0px rgba(0, 0, 0, 0.13);
-	box-shadow: 3px 7px 15px 0px rgba(0, 0, 0, 0.13);
-	transform: translate(0px,-60px);/*OVERLAPPING DIVS OVER IMAGE*/
+	-webkit-box-shadow: 3px 7px 15px 0px rgba(0, 0, 0, 0.40);
+	box-shadow: 3px 7px 15px 0px rgba(0, 0, 0, 0.40);
+	transform: translate(5px,-60px);/*OVERLAPPING DIVS OVER IMAGE*/
 }
 
 .box-menu .card-title {
@@ -766,6 +766,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de4710', end
   background-color:#011F5B;
   background-image: url("https://www.transparenttextures.com/patterns/skulls.png");
   transform: translate(-50px,35px);/*OVERLAPPING DIVS*/
+	-webkit-box-shadow: 3px 7px 15px 0px rgba(0, 0, 0, 0.50);
+	box-shadow: 3px 7px 15px 0px rgba(0, 0, 0, 0.50);
 }
 
 
@@ -1311,12 +1313,15 @@ right: 5%;
   color: #00FF00;
   box-shadow: 5px 2px 3px rgba(0,0,0,0.40);
 }
-.footer .img-thumbnail:hover{
-	cursor: pointer;
-	transform: scale(1.05);
+.footer .img-thumbnail{
 	transition: 0.30s;
 	-webkit-transition: 0.30s;
 	-moz-transition: 0.30s;
 	-ms-transition: 0.30s;
 	-o-transition: 0.30s;
+}
+.footer .img-thumbnail:hover{
+	cursor: pointer;
+	transform: scale(1.05);
+
 }
